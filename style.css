@@ -142,3 +142,44 @@ body {
     height: 100vh;
     background: url('./Images/background.jpg') no-repeat center/cover
 }
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    #left,
+    #right {
+        flex: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .text-input,
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .showcase {
+        height: 40vh;
+        background-position: center;
+        margin-top: 20px;
+    }
+
+    .showcase-content h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .main-footer {
+        font-size: 13px;
+        max-width: 100%;
+    }
+}
